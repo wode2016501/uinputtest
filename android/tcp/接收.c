@@ -25,7 +25,7 @@ int main() {
     printf("========================================\n\n");
     
     // 1. 打开物理触摸屏设备
-    physical_fd = open("/dev/input/event1", O_WRONLY);
+    physical_fd = open("/dev/input/event6", O_WRONLY);
     if (physical_fd < 0) {
         perror("打开物理触摸屏失败");
         printf("尝试其他设备节点...\n");
